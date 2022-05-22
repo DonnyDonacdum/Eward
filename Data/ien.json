@@ -1,9 +1,0 @@
-{ "intents": [
-        {
-        "tag" : "Greetings",
-        "patterns" : ["Hai","Hi","Good Morning","Selamat Pagi","What's up","Piye Kabare?","Apa kabar?","Good Afternoon","Noon sir"],
-        "respons" : ["Halo!","Hi","Hallo, ada yang bisa saya bantu?","Hallo, Selamat datang","Selamat datang di Penjualan Handphone"]
-        }
-    ]
-
-}
