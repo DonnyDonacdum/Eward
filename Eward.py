@@ -19,7 +19,7 @@ def preprocess_string(string):
     return string
 
 def chat(model):
-    print("Anda akan dihubungkan ke bot kami, mohon ditunggu")
+    print("Anda akan dihubungkan ke bot kami, mohon ditunggu...")
     exit = False
     while not exit:
         inp = input("Anda : ")
@@ -27,14 +27,14 @@ def chat(model):
         prob = model.predict([inp])
         results = le.classes_[prob.argmax()]
         if prob.max() < 0.2:
-            print("Bot : Maaf kak, aku ga ngerti")
+            print("EWARD : YGTKNS")
         else:
             for tg in data['intents']:
                 if tg['tag'] == results:
                     responses = tg['responses']
             if results == 'bye':
                 exit = True
-                print("END CHAT")
+                print("==== DEAD CHAT ====")
             print(f"Bot : {random.choice(responses)}")
 
 if __name__ == "__main__":
