@@ -19,7 +19,7 @@ def preprocess_string(string):
     return string
 
 def chat(model):
-    print("Anda akan dihubungkan ke bot kami, mohon ditunggu...")
+    print("Anda akan dihubungkan ke EWARD , mohon ditunggu...")
     exit = False
     while not exit:
         inp = input("Anda : ")
